@@ -23,7 +23,7 @@ const CharacterList = (props) => {
   } else {
     const characterElements = props.characters.map((character) => {
       return (
-        <li key={character.id}>
+        <li className="character-card" key={character.id}>
           <Character character={character} />
         </li>
       );

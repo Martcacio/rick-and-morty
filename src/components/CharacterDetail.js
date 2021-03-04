@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import dead from "../images/dead.png";
 
 const CharacterDetail = (props) => {
   console.log(props);
@@ -22,29 +23,35 @@ const CharacterDetail = (props) => {
   } else {
     return (
       <div className="">
-        <div className="">
+        <div className="container-card-one">
           <header className="">
-            <h2 className="">{props.selectedCharacter.name}</h2>
-            <Link to="/">
+            <h2 className="name-card-one">{props.selectedCharacter.name}</h2>
+            <Link to="/" className="cross">
               <span className="icon fas fa-times"></span>
             </Link>
           </header>
-          <section>
+          <section className="character-card-one">
             <ul className="cardsDetail">
               <img
-                className=""
+                className="image-one"
                 src={props.selectedCharacter.image}
                 alt={`image` + props.selectedCharacter.name}
               />
-              <h4>{props.selectedCharacter.name}</h4>
-              <h4>Species:{props.selectedCharacter.species}</h4>
-              <h4>Planet:{props.selectedCharacter.planet}</h4>
-              <h4>Nº episodes: {props.selectedCharacter.episodes}</h4>
-              <h4>
-                Dead or alive:
-                {props.selectedCharacter.status === "Alive"
-                  ? props.selectedCharacter.status
-                  : "fa-bath"}
+              <h4 className="specie-one">
+                Species:{props.selectedCharacter.species}
+              </h4>
+              <h4 className="planet-one">
+                Planet:{props.selectedCharacter.planet}
+              </h4>
+              <h4 className="episodes-one">
+                Nº episodes: {props.selectedCharacter.episodes}
+              </h4>
+              <h4 className="dead">
+                {props.selectedCharacter.status === "Alive" ? (
+                  ""
+                ) : (
+                  <img className="dead" src={dead} alt="dead" />
+                )}
               </h4>
             </ul>
           </section>
