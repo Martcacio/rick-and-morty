@@ -1,0 +1,34 @@
+.background {
+    background-image: url(../images/rick-morty.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.filter-name {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-family: 'Covered By Your Grace', cursive;
+}
+
+.filter-planet {
+    margin-bottom: 10px;
+    font-family: 'Covered By Your Grace', cursive;
+}
