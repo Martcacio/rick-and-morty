@@ -18,7 +18,7 @@ const FilterByName = (props) => {
         species="species"
         onChange={handleChange}
       />
-      <span className="icon fas fa-search"></span>
+      <span className="search icon fas fa-search"></span>
     </form>
   );
 };
