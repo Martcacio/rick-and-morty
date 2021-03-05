@@ -22,6 +22,11 @@ const App = () => {
       setPlanet(dataFilter.value);
     }
   };
+
+  const handleReset = () => {
+    setName("");
+    setPlanet("all");
+  };
   const filterCharacters = characters
     .filter((character) => {
       return character.name.toLowerCase().includes(name.toLowerCase());
@@ -37,6 +42,7 @@ const App = () => {
           <Filter
             className="filters"
             handleFilter={handleFilter}
+            handleReset={handleReset}
             name={name}
             planet={planet}
           />

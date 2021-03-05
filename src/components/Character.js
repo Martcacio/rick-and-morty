@@ -5,7 +5,7 @@ const Character = (props) => {
     <div className="container-list">
       <Link className="link" to={"/character/" + props.character.id}>
         <img
-          className="image-character"
+          className="character__image"
           src={props.character.image}
           alt={`image` + props.character.name}
         />

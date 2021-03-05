@@ -5,6 +5,7 @@ const FilterByName = (props) => {
   const handleDefault = (ev) => {
     ev.preventDefault();
   };
+
   return (
     <form onSubmit={handleDefault}>
       <input
@@ -17,6 +18,7 @@ const FilterByName = (props) => {
         species="species"
         onChange={handleChange}
       />
+      <span className="icon fas fa-search"></span>
     </form>
   );
 };

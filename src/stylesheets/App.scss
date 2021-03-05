@@ -9,6 +9,12 @@
     background-repeat: no-repeat;
 }
 
+.icon {
+    color: rgb(148, 148, 148);
+    font-size: 12px;
+    transform: translateX(-120px);
+}
+
 .header {
     padding: 0px;
     margin: 0px;
@@ -53,7 +59,7 @@
 }
 
 .character-card {
-    background-color: white;
+    background-color: #25dbbdb0;
     border: 5px solid rgb(40, 184, 59);
     border-radius: 25px;
     box-shadow: 7px 7px 5px #25dbbd;
@@ -63,7 +69,7 @@
     margin: 20px;
 }
 
-.image-character {
+.character__image {
     width: 200px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -123,6 +129,21 @@
     transform: translate(350px, -50px);
 }
 
+.reset {
+    margin-top: 20px;
+    transform: translate(120px, -45px);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: rgb(23, 196, 173);
+    box-shadow: 4px 4px 2px rgb(40, 184, 59);
+    text-decoration: none;
+}
+
 .cross {
     border-radius: 25px;
     display: flex;
@@ -168,8 +189,8 @@
 .character-name {
     border-radius: 25px;
     width: auto;
-    transform: translateY(-25px);
-    background-color: rgba(255, 255, 255, 0.726);
+    transform: translateY(-20px);
+    background-color: #ffffff;
     font-family: 'Covered By Your Grace', cursive;
     font-size: 24px;
     color: black;
@@ -235,7 +256,7 @@
     border: 5px solid rgb(40, 184, 59);
     border-radius: 25px;
     box-shadow: 7px 7px 5px #25dbbd;
-    width: 650px;
+    width: 750px;
     height: 350px;
     display: flex;
     margin: 20px;
