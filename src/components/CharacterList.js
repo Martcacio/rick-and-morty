@@ -1,23 +1,15 @@
 import Character from "./Character";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import fail from "../images/fail.jpg";
 
 const CharacterList = (props) => {
   console.log(props.characters);
   if (props.characters.length === 0) {
     return (
-      <div className="">
-        <div className="">
-          <header className="">
-            <h2 className="">No sé Rick, parece falso</h2>
-            <Link to="/">
-              <span className="icon fas fa-times"></span>
-            </Link>
-          </header>
-          <section>
-            <p>x</p>
-          </section>
-        </div>
+      <div className="container-card-fail">
+        <section className="character-card-fail">
+          <img className="image-fail" src={fail} alt="fail image" />
+        </section>
       </div>
     );
   } else {

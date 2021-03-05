@@ -138,6 +138,21 @@
     text-decoration: none;
 }
 
+.cross-fail {
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: rgb(23, 196, 173);
+    position: fixed;
+    transform: translate(360px, -180px);
+    box-shadow: 4px 4px 2px #181818;
+    text-decoration: none;
+}
+
 .dead {
     width: 400px;
     position: fixed;
@@ -201,4 +216,27 @@
 .filter-planet-image {
     transform: translateY(5px);
     height: 20px;
+}
+
+.image-fail {
+    width: 1000px;
+    border-radius: 20px;
+}
+
+.container-card-fail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.character-card-fail {
+    background-color: white;
+    border: 5px solid rgb(40, 184, 59);
+    border-radius: 25px;
+    box-shadow: 7px 7px 5px #25dbbd;
+    width: 650px;
+    height: 350px;
+    display: flex;
+    margin: 20px;
 }
