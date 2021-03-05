@@ -1,8 +1,6 @@
-.body {
-    background-image: url(../images/rick-morty.jpg);
+body {
+    background: url(../images/rick-morty.jpg) no-repeat center / cover fixed;
     width: 100%;
     height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
     margin: 0;
 }

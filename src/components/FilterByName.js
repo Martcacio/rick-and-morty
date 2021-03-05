@@ -6,15 +6,13 @@ const FilterByName = (props) => {
     ev.preventDefault();
   };
   return (
-    <form className="filter-name" onSubmit={handleDefault}>
-      <label className="" htmlFor="name">
-        Filtrar por nombre:
-      </label>
+    <form onSubmit={handleDefault}>
       <input
-        className=""
+        className="filter-name-input"
         type="text"
         name="name"
         value={props.name}
+        placeholder=" Search"
         id="id"
         species="species"
         onChange={handleChange}

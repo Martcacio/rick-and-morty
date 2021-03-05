@@ -30,7 +30,7 @@ const CharacterList = (props) => {
     });
 
     return (
-      <section>
+      <section className="cards-container">
         <ul className="cards">{characterElements}</ul>
       </section>
     );

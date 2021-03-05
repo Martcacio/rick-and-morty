@@ -1,14 +1,17 @@
+import planet from "../images/planet.png";
+
 const FilterByPlanet = (props) => {
   const handleChange = (ev) => {
     props.handleFilter({ key: "planet", value: ev.target.value });
   };
   return (
-    <form className="filter-planet">
-      <label className="" htmlFor="name">
-        Filtrar por planeta:
+    <form className="filter-planet-container">
+      <label className="filter-planet-label" htmlFor="name">
+        Search by{" "}
+        <img className="filter-planet-image" src={planet} alt="planet" />:
       </label>
       <select
-        className=""
+        className="filter-planet-select"
         type="text"
         name="planet"
         value={props.planet}
