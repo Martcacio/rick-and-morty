@@ -6,6 +6,7 @@ const getDataFromApi = () => {
                 return {
                     id: characters.id,
                     name: characters.name,
+                    gender: characters.gender,
                     species: characters.species,
                     image: characters.image,
                     planet: characters.origin.name,
