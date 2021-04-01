@@ -10,6 +10,7 @@ const App = () => {
   const [characters, setCharacters] = useState([]);
   const [name, setName] = useState("");
   const [planet, setPlanet] = useState("all");
+  const [gender, setGender] = useState("all");
 
   useEffect(() => {
     getDataFromApi().then((data) => setCharacters(data));
@@ -20,12 +21,15 @@ const App = () => {
       console.log();
     } else if (dataFilter.key === "planet") {
       setPlanet(dataFilter.value);
+    } else if (dataFilter.key === "gender") {
+      setGender(dataFilter.value);
     }
   };
 
   const handleReset = () => {
     setName("");
     setPlanet("all");
+    setGender("all");
   };
   const filterCharacters = characters
     .filter((character) => {
@@ -42,18 +46,22 @@ const App = () => {
     })
     .filter((character) => {
       return planet === "all" ? true : character.planet === planet;
+    })
+    .filter((character) => {
+      return gender === "all" ? true : character.gender === gender;
     });
   const renderHome = (props) => {
     return (
       <>
         <section className="header">
-          <img className="logo" src={logo} alt="Rick y Morty logo" />{" "}
+          <img className="logo" src={logo} alt="Rick y Morty logo" />
           <Filter
             className="filters"
             handleFilter={handleFilter}
             handleReset={handleReset}
             name={name}
             planet={planet}
+            gender={gender}
           />
         </section>
         <CharacterList characters={filterCharacters} />
