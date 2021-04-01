@@ -13,6 +13,7 @@
     color: rgb(133, 133, 133);
     font-size: 12px;
     font-size: 12px;
+    transform: translateX(-120px);
     @media all and (min-width: 768px) {
         transform: translateX(-120px);
     }
@@ -67,6 +68,11 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 0;
+}
+
+.cardsDetail {
+    padding: 0;
 }
 
 .character-card {
@@ -75,7 +81,6 @@
     border-radius: 25px;
     box-shadow: 7px 7px 5px #25dbbd;
     width: 170px;
-    height: 220px;
     display: flex;
     margin: 20px;
     @media all and (min-width: 768px) {
@@ -106,7 +111,6 @@
     border-radius: 25px;
     box-shadow: 7px 7px 5px #25dbbd;
     width: 200px;
-    height: 300px;
     display: flex;
     margin: 20px;
     @media all and (min-width: 768px) {
@@ -120,7 +124,7 @@
     font-size: 20px;
     font-family: 'Covered By Your Grace', cursive;
     color: black;
-    transform: translateY(210px);
+    transform: translateY(270px);
     @media all and (min-width: 768px) {
         position: fixed;
         width: 400px;
@@ -130,11 +134,11 @@
 }
 
 .image-one {
-    width: 150px;
+    border-radius: 25px;
+    width: 200px;
     margin-bottom: 40px;
     @media all and (min-width: 768px) {
         border: 7px solid rgb(23, 196, 173);
-        border-radius: 25px;
         margin-top: 50px;
         margin-bottom: 0px;
         width: 300px;
@@ -142,9 +146,11 @@
 }
 
 .specie-one {
+    padding: 5px;
     color: black;
     font-size: 18px;
     @media all and (min-width: 768px) {
+        padding: 0px;
         font-size: 25px;
         position: fixed;
         transform: translate(350px, -130px);
@@ -152,9 +158,11 @@
 }
 
 .planet-one {
+    padding: 5px;
     color: black;
     font-size: 18px;
     @media all and (min-width: 768px) {
+        padding: 0px;
         font-size: 25px;
         position: fixed;
         transform: translate(350px, -90px);
@@ -162,9 +170,11 @@
 }
 
 .episodes-one {
+    padding: 5px;
     color: black;
     font-size: 18px;
     @media all and (min-width: 768px) {
+        padding: 0px;
         font-size: 25px;
         position: fixed;
         transform: translate(350px, -50px);
@@ -199,9 +209,12 @@
     color: white;
     background-color: rgb(23, 196, 173);
     position: fixed;
-    transform: translate(360px, 50px);
+    transform: translate(-50px, 0px);
     box-shadow: 4px 4px 2px #181818;
     text-decoration: none;
+    @media all and (min-width: 768px) {
+        transform: translate(360px, 50px);
+    }
 }
 
 .cross-fail {
@@ -214,9 +227,12 @@
     color: white;
     background-color: rgb(23, 196, 173);
     position: fixed;
-    transform: translate(360px, -180px);
+    transform: translate(-90px, -150px);
     box-shadow: 4px 4px 2px #181818;
     text-decoration: none;
+    @media all and (min-width: 768px) {
+        transform: translate(360px, -180px);
+    }
 }
 
 .dead {
@@ -304,8 +320,12 @@
     border: 5px solid rgb(40, 184, 59);
     border-radius: 25px;
     box-shadow: 7px 7px 5px #25dbbd;
-    width: 750px;
-    height: 350px;
+    width: 200px;
+    height: 200px;
     display: flex;
     margin: 20px;
+    @media all and (min-width: 768px) {
+        width: 750px;
+        height: 350px;
+    }
 }
