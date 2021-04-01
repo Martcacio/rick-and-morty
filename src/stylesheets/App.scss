@@ -106,7 +106,7 @@
     border-radius: 25px;
     box-shadow: 7px 7px 5px #25dbbd;
     width: 200px;
-    height: 300px;
+    height: 340px;
     display: flex;
     margin: 20px;
     @media all and (min-width: 768px) {
@@ -199,9 +199,11 @@
     color: white;
     background-color: rgb(23, 196, 173);
     position: fixed;
-    transform: translate(360px, 50px);
     box-shadow: 4px 4px 2px #181818;
     text-decoration: none;
+    @media all and (min-width: 768px) {
+        transform: translate(360px, 50px);
+    }
 }
 
 .cross-fail {
@@ -214,9 +216,12 @@
     color: white;
     background-color: rgb(23, 196, 173);
     position: fixed;
-    transform: translate(360px, -180px);
+    transform: translate(-90px, -150px);
     box-shadow: 4px 4px 2px #181818;
     text-decoration: none;
+    @media all and (min-width: 768px) {
+        transform: translate(360px, -180px);
+    }
 }
 
 .dead {
